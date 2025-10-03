@@ -4,8 +4,7 @@ import { faker } from '@faker-js/faker';
 
 // import { Intern } from './intern/intern.model.ts'; 
 
-// const dbUri = 'mongodb://localhost:27017/your_db_name';
-const dbUri = 'mongodb+srv://piyushpatelcodes:7XTQTUxJ15huRpsD@cluster0.2sv5x1k.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
+const dbUri = 'mongodb://localhost:27017/your_db_name';
 mongoose.connect(dbUri);
 
 const InternModel = mongoose.model('Intern', InternSchema);
