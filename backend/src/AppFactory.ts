@@ -23,6 +23,9 @@ export class AppFactory {
          * @see {@link https://docs.nestjs.com/security/cors}
          */
         app.enableCors({
+          origin: '*', 
+    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+    allowedHeaders: 'Content-Type, Accept, Authorization',
           exposedHeaders: '*',
         });
 
